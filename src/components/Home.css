@@ -1,0 +1,63 @@
+/* Keyframes for animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Home section styling */
+.home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 500px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 100px;
+  background-color: #c9eaf0;
+}
+
+/* Animation for the text */
+.animate-text {
+  animation: fadeInUp 2s ease-out forwards infinite; /* Added infinite iteration */
+}
+
+.home-content h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.home-content h2 {
+  font-size: 24px;
+  color: #5ab1c0;
+}
+
+/* Animation for the profile picture */
+.animate-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: slideInRight 2s ease-out forwards infinite; /* Added infinite iteration */
+}
+
+/* Social icons styling (if needed) */
+.social-icons {
+  margin-top: 20px;
+}
