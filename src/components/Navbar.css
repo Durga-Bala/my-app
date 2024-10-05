@@ -1,22 +1,86 @@
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
+/* Basic Navbar styling */
+.navbar {
+  background-color: #0f1111; /* Navbar background color */
+  padding: 10px 60px; 
+  position: relative;/* Default padding for the navbar */
+ /* Needed for positioning the toggle */
+}
+
+.navbar-toggle {
+  display: none; /* Hide toggle button by default */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 4px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Show toggle button on mobile */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex; /* Show toggle button */
+  }
+
+  .navbar-menu {
+    display: none; /* Hide menu by default */
+    text-align: center; /* Center the nav items */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .navbar ul {
     padding: 0;
-    text-align: right;
   }
-  
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #7c9aa0; /* Hover effect */
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 20px; /* Smaller padding for mobile devices */
+  }
+
+  .navbar ul {
+    padding: 0;
+    text-align: center; /* Center the nav items */
+  }
+
   .navbar ul li {
-    display: inline-block;
-    margin: 0 10px;
+    display: block; /* Vertically stack the items */
+    margin: 8px 0; /* Adjust margins for smaller screens */
   }
-  
+
   .navbar ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 18px; /* Larger font size for readability */
   }
-  
-  .navbar ul li a:hover {
-    color: #03080e;
-  }
-  
+}

@@ -1,5 +1,6 @@
+/* Contact section styling */
 .contact {
-  background-color: #c9eaf0;
+  background-color: #7c9aa0;
   padding: 60px 20px;
   text-align: center;
 }
@@ -11,11 +12,18 @@
 
 .contact-form {
   margin-top: 20px;
-  display: inline-block;
-  width: 100%;
-  max-width: 600px;
+  display: block;
+  width: 100%; /* Full width on smaller screens */
+  max-width: 600px; /* Limit width for larger screens */
+  background-color: #7c9aa0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto; /* Center the form */
 }
 
+/* Form input styling */
 .form-group {
   margin-bottom: 20px;
   text-align: left;
@@ -29,11 +37,12 @@
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
-  padding: 10px;
+  width: 100%; /* Full width for inputs */
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-group textarea {
@@ -41,22 +50,112 @@
   height: 150px;
 }
 
+/* Submit button styling */
 button[type="submit"] {
   padding: 12px 20px;
-  background-color: #007bff;
+  background-color: #7c9aa0;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #090b0e;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Success message styling */
 .success-message {
   color: green;
   margin-top: 20px;
+}
+
+/* Responsive adjustments */
+
+/* For tablets and medium devices */
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px 15px;
+  }
+
+  .contact h2 {
+    font-size: 28px; /* Adjust heading size */
+  }
+
+  .contact-form {
+    padding: 20px;
+    max-width: 90%; /* Slightly reduce form width */
+  }
+
+  .form-group label {
+    font-size: 16px; /* Adjust label font size */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px; /* Adjust input text size */
+  }
+
+  button[type="submit"] {
+    font-size: 14px; /* Adjust button size */
+    padding: 10px 15px; /* Adjust padding */
+  }
+}
+
+/* For mobile devices and smaller screens */
+@media (max-width: 480px) {
+  .contact {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .contact h2 {
+    font-size: 24px; /* Reduce heading size */
+  }
+
+  .contact-form {
+    padding: 15px;
+    max-width: 100%; /* Ensure the form takes full width on mobile */
+  }
+
+  .form-group label {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px; /* Adjust input text size */
+  }
+
+  button[type="submit"] {
+    font-size: 14px; /* Smaller button text */
+    padding: 8px 12px; /* Reduce padding for the button */
+  }
+}
+
+/* For extra small screens (less than 360px width) */
+@media (max-width: 360px) {
+  .contact {
+    padding: 10px 5px; /* Further reduce padding for very small screens */
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+
+  .form-group label {
+    font-size: 13px; /* Adjust font size for extra small screens */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 12px; /* Smaller input text size */
+  }
+
+  button[type="submit"] {
+    font-size: 12px; /* Smaller button text size */
+    padding: 6px 10px; /* Reduce padding for extra small screens */
+  }
 }

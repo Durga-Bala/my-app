@@ -1,6 +1,7 @@
+/* Skills section styling */
 .skills {
-  background-color: #c9eaf0;
-  padding: 60px 20px;
+  background-color: #7c9aa0;
+  padding: 40px 20px; /* Adjusted padding for a more compact look */
   text-align: center;
 }
 
@@ -9,28 +10,72 @@
   margin-bottom: 20px;
 }
 
+/* Container for skills */
 .skills-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px; /* Space between skill boxes */
 }
 
+/* Individual skill box */
 .skill {
   text-align: center;
-  margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px; /* Default width for larger screens */
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
 }
 
 .skill:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgb(250, 251, 252);
 }
 
 .skill-icon {
   font-size: 50px;
   margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .skills-container {
+    justify-content: center; /* Center content on medium screens */
+  }
+
+  .skill {
+    width: 220px; /* Reduce width for medium screens */
+  }
+
+  .skills h2 {
+    font-size: 32px; /* Adjust heading size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .skill {
+    width: 90%; /* Use more screen width for small devices */
+    margin: 0; /* Remove default margin to avoid overflow */
+  }
+
+  .skills h2 {
+    font-size: 28px; /* Adjust heading size for tablets */
+  }
+
+  .skill-icon {
+    font-size: 40px; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills h2 {
+    font-size: 24px; /* Smaller heading for mobile */
+  }
+
+  .skill-icon {
+    font-size: 35px; /* Adjust icon size for mobile */
+  }
 }

@@ -1,11 +1,19 @@
+/* General About section styling */
 .about {
-  background-color: #e1e9ee;
+  background-color: #dceae9;
   padding: 60px 20px;
   text-align: center;
   opacity: 0; /* Start with hidden content */
   animation: fade-in 1s ease-in-out forwards; /* Fade-in animation on page load */
+  box-sizing: border-box; /* Ensure padding is included in the size */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  overflow: hidden; /* Prevent overflow issues */
 }
 
+/* Styling for the heading */
 .about h2 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -14,6 +22,7 @@
   animation: slide-in 1.5s ease-in-out forwards; /* Slide-in animation */
 }
 
+/* Styling for the paragraph text */
 .about p {
   max-width: 600px;
   margin: 0 auto;
@@ -22,6 +31,7 @@
   transform: translateY(30px);
   color: #0e0f0e;
   animation: slide-in 1.5s ease-in-out forwards; /* Slide-in animation */
+  font-size: 18px; /* Default text size for readability */
 }
 
 /* Keyframes for fade-in effect */
@@ -43,5 +53,48 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .about h2 {
+    font-size: 32px; /* Slightly smaller heading for medium screens */
+  }
+
+  .about p {
+    font-size: 17px; /* Adjust text size */
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 15px; /* Reduce padding on smaller screens */
+    min-height: 100vh; /* Ensure full height for smaller screens */
+  }
+
+  .about h2 {
+    font-size: 28px; /* Smaller font size on tablets */
+  }
+
+  .about p {
+    font-size: 16px; /* Adjust text size for readability */
+    max-width: 90%; /* Use more screen space on smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 10px; /* Further reduce padding for small screens */
+    min-height: 100vh; /* Full screen height for mobile */
+  }
+
+  .about h2 {
+    font-size: 24px; /* Smaller headline for mobile screens */
+  }
+
+  .about p {
+    font-size: 14px; /* Further reduce text size */
+    max-width: 100%; /* Full width on very small screens */
   }
 }

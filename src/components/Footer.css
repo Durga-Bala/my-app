@@ -1,12 +1,32 @@
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
   }
-  
+
   .footer p {
-    margin: 0;
-    font-size: 16px;
+    font-size: 14px; /* Adjust text size for medium screens */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer p {
+    font-size: 12px; /* Smaller text for mobile screens */
+  }
+}

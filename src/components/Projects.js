@@ -38,12 +38,12 @@ function Projects() {
                 rel="noopener noreferrer"
                 className="view-project-button"
                 >
-                  View Project
+                  View Code
               </a>
               <a href="http://127.0.0.1:3001/index.html"
               target="_blank" 
               rel="noopener noreferrer" 
-              className="details-button">Project Details</a>
+              className="details-button">Show Project</a>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ function Projects() {
                 rel="noopener noreferrer"
                 className="view-project-button"
                 >
-                  View Project
+                  View Code
               </a>
               <a href="/ebook-management-details" className="details-button">Project Details</a>
             </div>
@@ -75,8 +75,8 @@ function Projects() {
             <div className="project-details">
               <h3>Shipment Tracking using Blockchain</h3>
               <p>A secure system using blockchain technology to track shipments and verify data integrity.</p>
-              <a href="#view-shipment-tracking" className="view-project-button">View Project</a>
-              <a href="/shipment-tracking-details" className="details-button">Project Details</a>
+              <a href="#view-shipment-tracking" className="view-project-button">View Code</a>
+              <a href="/shipment-tracking-details" className="details-button">Show Project</a>
             </div>
           </div>
         </div>
@@ -88,8 +88,8 @@ function Projects() {
             <div className="project-details">
               <h3>Car Booking Management</h3>
               <p>An online platform for booking cars with features like availability check and booking confirmation.</p>
-              <a href="#view-car-booking" className="view-project-button">View Project</a>
-              <a href="/car-booking-details" className="details-button">Project Details</a>
+              <a href="#view-car-booking" className="view-project-button">View Code</a>
+              <a href="/car-booking-details" className="details-button">Show Project</a>
             </div>
           </div>
         </div>
@@ -101,8 +101,8 @@ function Projects() {
             <div className="project-details">
               <h3>Fruits Management using C</h3>
               <p>A C-based application to manage fruits stock with options for adding, deleting, and updating entries.</p>
-              <a href="#view-fruits-management" className="view-project-button">View Project</a>
-              <a href="/fruits-management-details" className="details-button">Project Details</a>
+              <a href="#view-fruits-management" className="view-project-button">View Code</a>
+              <a href="/fruits-management-details" className="details-button">Show Project</a>
             </div>
           </div>
         </div>

@@ -23,7 +23,7 @@ function Home() {
         <h1 className={animateText ? 'animate-text' : ''}>Hi, I'm Durga</h1>
         <h2 className={animateText ? 'animate-text' : ''}>Software Developer</h2>
         <div className="social-icons">
-          {/* Social icons */}
+          {/* Add social icons here if needed */}
         </div>
       </div>
       <div className="home-image">

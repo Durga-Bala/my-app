@@ -3,20 +3,41 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 50px;
+  padding: 20px 50px; /* Default padding for larger screens */
   color: white;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  border-left: 0;  /* Ensure no rounded edges */
-  border-right: 0; /* Ensure no rounded edges */
-  box-shadow: 0 0 0 0; /* Remove any potential shadows */
+  box-shadow: none; /* Remove any potential shadows */
 }
-  
+
 .header-title {
   font-size: 24px;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 30px; /* Adjust padding for tablets */
+  }
+
+  .header-title {
+    font-size: 20px; /* Reduce font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 20px; /* Adjust padding for mobile devices */
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: flex-start;
+    position:fixed; /* Align title and navbar to the left */
+  }
+
+  .header-title {
+    font-size: 18px; /* Reduce font size for mobile screens */
+    margin-bottom: 10px; /* Add margin to separate from navbar */
+  }
 }
